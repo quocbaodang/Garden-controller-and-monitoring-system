@@ -1,0 +1,14 @@
+Number humidity <humidity> {channel = "mqtt:topic:MyMQTTBroker:theodoi:humidity"}
+Number soil {channel = "mqtt:topic:MyMQTTBroker:theodoi:soil"}
+Number temperature {channel = "mqtt:topic:MyMQTTBroker:theodoi:temperature"}
+
+Number temp {channel = "mqtt:topic:MyMQTTBroker:caidat:temp"}
+Number humi  {channel = "mqtt:topic:MyMQTTBroker:caidat:humi"}
+Number s  {channel = "mqtt:topic:MyMQTTBroker:caidat:s"}
+
+Switch water {channel = "mqtt:topic:MyMQTTBroker:dieukhien:water"}
+Switch fan {channel = "mqtt:topic:MyMQTTBroker:dieukhien:fan"}
+Switch mist {channel = "mqtt:topic:MyMQTTBroker:dieukhien:mist"}
+Switch light {channel = "mqtt:topic:MyMQTTBroker:dieukhien:light"}
+Switch auto "Tự động" <switch> {channel = "mqtt:topic:MyMQTTBroker:dieukhien:auto"}
+

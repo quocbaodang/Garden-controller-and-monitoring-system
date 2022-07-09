@@ -1,0 +1,34 @@
+sitemap default label="Hệ thống điều khiển và giám sát nhà vườn" {
+
+    Frame label="Theo dõi trạng thái" {
+       Text item=temperature label="Nhiệt độ [%.1f °C]" icon="temperature"{
+		Chart item=temperature label="Biểu đồ nhiệt độ" period=h refresh=20
+		}
+       Text item=humidity label="Độ ẩm [%.1f %%]" icon="humidity" {
+		Chart item=humidity period=h refresh=20
+		}
+       Text item=soil label="Độ ẩm đất [%.1f %%]" icon="humidity"{
+		Chart item=soil period=h refresh=20
+		}
+    	}
+    Frame label="Điều khiển" {
+       Switch item=water label="Bơm nước" icon="water"
+	Switch item=fan label="Quạt" icon="fan"
+	Switch item=mist label="Phun sương" icon="rain"
+	Switch item=light label="Đèn" icon="light"
+	}
+    Frame label="Chế độ tự động" {
+        Switch item=auto
+    	}
+
+   Frame label="Cài đặt thông số" {
+	Text label="Cài đặt" icon="groundfloor" {
+		Setpoint item=temp label="Nhiệt độ [%.1f °C]" icon="temperature" minValue=0 maxValue=99 step=1
+		
+		Setpoint item=humi label="Độ ẩm [%.1f %%]" icon="humidity" minValue=0 maxValue=99 step=1
+		
+		Setpoint item=s label="Độ ẩm đất [%.1f %%]" icon="humidity" minValue=0 maxValue=99 step=1
+		
+		}	    
+	}
+}   
