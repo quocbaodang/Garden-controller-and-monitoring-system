@@ -1,5 +1,7 @@
-# GARDEN CONTROLLER AND MONITORING SYSTEM
+# HỆ THỐNG ĐIỀU KHIỂN VÀ GIÁM SÁT NHÀ VƯỜN
 
-BOARD ESP32
+Phát triển trên board ESP32
 
-USE ESP-IDF
+Sử dụng ESP-IDF
+
+Sử dụng giao thức MQTT để hiện thị các thông số lên Web/App openHAB
